@@ -52,7 +52,6 @@ def createMetadata():
     auth.text = srsAuth
     code.text = srsCode
     fSize.text = fileSize
-    mdDateStamp.text = dateStamp
     if f.endswith ('.shp'):
         geomObjects =  root.find('gmd:spatialRepresentationInfo/gmd:MD_VectorSpatialRepresentation/gmd:geometricObjects/gmd:MD_GeometricObjects/gmd:geometricObjectCount/gco:Integer', namespaces=namespaces)
         geomObjects.text =  str(lyr.GetFeatureCount())
